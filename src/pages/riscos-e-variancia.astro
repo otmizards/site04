@@ -1,0 +1,120 @@
+---
+import { SITE } from "../config/site.js";
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title =
+  "Porque os resultados variam no casino online | 360Wins Portugal";
+const description =
+  "Explicação simples sobre porque os resultados variam no casino online, o que é normal acontecer e como evitar decisões por impulso.";
+---
+
+<GuideLayout title={title} description={description} canonicalPath="/riscos-e-variancia">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Entender o básico</p>
+      <h1>Porque os resultados variam no casino online</h1>
+      <p class="lead">
+        Ganhar numa sessão e perder noutra é normal.
+        Os resultados mudam porque cada jogada é independente.
+        Este guia explica isso de forma <strong>simples</strong>,
+        sem termos técnicos.
+      </p>
+
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 5–7 min</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#porque-variar">Porque os resultados variam</a></li>
+        <li><a href="#curto-prazo">O que acontece no curto prazo</a></li>
+        <li><a href="#expectativas">Expectativas realistas</a></li>
+        <li><a href="#erros">Erros comuns</a></li>
+        <li><a href="#proximos-passos">Próximos passos</a></li>
+      </ol>
+    </nav>
+
+    <section id="porque-variar">
+      <h2>Porque os resultados variam</h2>
+      <p>
+        Cada jogada é um novo resultado.
+        O jogo não “lembra” o que aconteceu antes.
+      </p>
+      <p>
+        Isso significa que podes ganhar várias vezes seguidas
+        ou perder várias vezes seguidas sem que exista um motivo especial.
+      </p>
+    </section>
+
+    <section id="curto-prazo">
+      <h2>O que acontece no curto prazo</h2>
+      <p>
+        Em sessões curtas, os resultados parecem extremos:
+        ou tudo corre bem ou tudo corre mal.
+      </p>
+      <ul>
+        <li>sequências longas sem ganhar são normais</li>
+        <li>ganhos pontuais podem acontecer de repente</li>
+        <li>não existe garantia de repetição</li>
+      </ul>
+    </section>
+
+    <section id="expectativas">
+      <h2>Expectativas realistas</h2>
+      <p>
+        Jogar com expectativas simples ajuda a manter controlo.
+      </p>
+      <ul>
+        <li>não esperes ganhar sempre</li>
+        <li>não tentes prever resultados</li>
+        <li>aceita que perder faz parte do jogo</li>
+      </ul>
+    </section>
+
+    <section id="erros">
+      <h2>Erros comuns</h2>
+      <ul>
+        <li>achar que “está quase a virar”</li>
+        <li>aumentar apostas após perdas</li>
+        <li>jogar mais tempo para recuperar</li>
+      </ul>
+      <p>
+        Estes erros aumentam risco e frustração.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos</h2>
+      <ul>
+        <li><a href="/gestao-de-limites">Gestão simples de limites</a></li>
+        <li><a href="/jogo-consciente">Jogo consciente para iniciantes</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram partilhamos explicações simples sobre controlo e decisões.
+        </p>
+        <a
+          class="btn btn-telegram btn-cta"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
+</GuideLayout>

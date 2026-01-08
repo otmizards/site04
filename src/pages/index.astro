@@ -1,0 +1,161 @@
+---
+import { SITE } from "../config/site.js";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title =
+  "Casino online explicado de forma simples | 360Wins Portugal";
+const description =
+  "Explicações simples sobre casino online para quem está a começar: o que é, como funciona, tipos de jogos e boas práticas.";
+
+const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl ?? "#";
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/">
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="topbar-brand" href="/" aria-label="Homepage">
+        <img class="topbar-logo" src="/logo.png" alt={title} />
+      </a>
+
+      <nav class="topbar-nav">
+        <a href="#guias">Guias</a>
+        <a href="#faq">FAQ</a>
+        <a
+          class="btn btn-telegram btn-small"
+          href={TELEGRAM_URL}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Telegram
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-mock">
+      <div class="container hero-mock-inner">
+        <img class="hero-logo" src="/logo.png" alt={title} />
+
+        <h1 class="hero-title">
+          Casino online explicado de forma simples
+        </h1>
+
+        <p class="hero-sub">
+          Este site foi criado para quem nunca jogou ou quer entender
+          o básico do casino online sem termos complicados.
+          Aqui explicamos como funciona, o que é normal acontecer
+          e como manter controlo — tudo em português de Portugal.
+        </p>
+
+        <div class="hero-cards" id="guias">
+          <a class="mock-card" href="/guia-iniciante">
+            <span class="mock-ic">★</span>
+            <div>
+              <strong>Guia para iniciantes</strong>
+              <small>O básico explicado passo a passo</small>
+            </div>
+          </a>
+
+          <a class="mock-card" href="/como-ler-condicoes">
+            <span class="mock-ic">✓</span>
+            <div>
+              <strong>Como ler condições</strong>
+              <small>Regras importantes sem complicações</small>
+            </div>
+          </a>
+
+          <a class="mock-card" href="/gestao-de-limites">
+            <span class="mock-ic">♢</span>
+            <div>
+              <strong>Gestão de limites</strong>
+              <small>Tempo e dinheiro explicados de forma simples</small>
+            </div>
+          </a>
+
+          <a class="mock-card" href="/riscos-e-variancia">
+            <span class="mock-ic">◆</span>
+            <div>
+              <strong>Porque os resultados variam</strong>
+              <small>O que é normal acontecer ao jogar</small>
+            </div>
+          </a>
+
+          <a class="mock-card" href="/jogo-consciente">
+            <span class="mock-ic">⚑</span>
+            <div>
+              <strong>Jogo consciente</strong>
+              <small>Quando parar e fazer pausas</small>
+            </div>
+          </a>
+        </div>
+
+        <a
+          class="btn btn-telegram btn-cta"
+          href={TELEGRAM_URL}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq-mock">
+      <div class="container">
+        <h2 class="faq-title">Perguntas Frequentes</h2>
+
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary>Este site é para quem nunca jogou?</summary>
+            <p>
+              Sim. O conteúdo foi criado para iniciantes e pessoas
+              que querem apenas entender como o casino online funciona.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Este site recomenda casinos ou garante resultados?</summary>
+            <p>
+              Não. O conteúdo é exclusivamente educativo e informativo.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Preciso de conhecer regras complicadas?</summary>
+            <p>
+              Não. Os guias explicam apenas o essencial,
+              de forma clara e acessível.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>O conteúdo é focado em Portugal?</summary>
+            <p>
+              Sim. Todo o conteúdo está em português de Portugal
+              e pensado para utilizadores em Portugal.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

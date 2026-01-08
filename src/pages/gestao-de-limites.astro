@@ -1,0 +1,144 @@
+---
+import { SITE } from "../config/site.js";
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title =
+  "Gestão de limites no casino online: versão simples | 360Wins Portugal";
+const description =
+  "Guia simples de gestão de limites no casino online: tempo, dinheiro e pausas explicados para quem está a começar.";
+---
+
+<GuideLayout title={title} description={description} canonicalPath="/gestao-de-limites">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Manter controlo</p>
+      <h1>Gestão de limites no casino online</h1>
+      <p class="lead">
+        Definir limites não é deixar de jogar.
+        É uma forma simples de <strong>evitar decisões por impulso</strong>
+        e manter o jogo dentro do que faz sentido para ti.
+      </p>
+
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 5–7 min</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#porque">Porque definir limites</a></li>
+        <li><a href="#tipos">Os 3 limites mais importantes</a></li>
+        <li><a href="#tempo">Limite de tempo</a></li>
+        <li><a href="#dinheiro">Limite de dinheiro</a></li>
+        <li><a href="#frequencia">Frequência de jogo</a></li>
+        <li><a href="#erros">Erros comuns</a></li>
+        <li><a href="#proximos-passos">Próximos passos</a></li>
+      </ol>
+    </nav>
+
+    <section id="porque">
+      <h2>Porque definir limites</h2>
+      <p>
+        Sem limites, é fácil perder a noção do tempo e do dinheiro.
+        Limites funcionam como um “travão” automático.
+      </p>
+      <p>
+        Eles devem ser definidos <strong>antes</strong> de começar a jogar,
+        quando estás calmo e a pensar com clareza.
+      </p>
+    </section>
+
+    <section id="tipos">
+      <h2>Os 3 limites mais importantes</h2>
+      <ul>
+        <li><strong>tempo:</strong> quanto tempo jogas numa sessão</li>
+        <li><strong>dinheiro:</strong> quanto estás disposto a perder</li>
+        <li><strong>frequência:</strong> quantas vezes jogas</li>
+      </ul>
+      <p>
+        Para a maioria das pessoas, estes três são suficientes.
+      </p>
+    </section>
+
+    <section id="tempo">
+      <h2>Limite de tempo</h2>
+      <p>
+        Jogar durante muito tempo seguido cansa e reduz o autocontrolo.
+      </p>
+      <ul>
+        <li>define um tempo máximo (ex.: 30 minutos)</li>
+        <li>usa um alarme no telemóvel</li>
+        <li>quando o tempo acaba, paras</li>
+      </ul>
+    </section>
+
+    <section id="dinheiro">
+      <h2>Limite de dinheiro</h2>
+      <p>
+        O limite de dinheiro é o valor máximo que aceitas perder
+        numa sessão ou num dia.
+      </p>
+      <ul>
+        <li>define o valor antes de jogar</li>
+        <li>não aumentes o limite depois de perder</li>
+        <li>não tentes “recuperar” no mesmo dia</li>
+      </ul>
+    </section>
+
+    <section id="frequencia">
+      <h2>Frequência de jogo</h2>
+      <p>
+        Jogar muitos dias seguidos aumenta decisões emocionais.
+      </p>
+      <ul>
+        <li>idealmente, não jogues todos os dias</li>
+        <li>dias sem jogar fazem parte do controlo</li>
+      </ul>
+    </section>
+
+    <section id="erros">
+      <h2>Erros comuns</h2>
+      <ul>
+        <li>definir limites a meio da sessão</li>
+        <li>mudar limites após perdas</li>
+        <li>ignorar o alarme de tempo</li>
+      </ul>
+      <p>
+        Se estes erros aparecem, é sinal de pausa.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos</h2>
+      <ul>
+        <li><a href="/riscos-e-variancia">Porque os resultados variam</a></li>
+        <li><a href="/jogo-consciente">Jogo consciente para iniciantes</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram partilhamos lembretes simples para manter controlo.
+        </p>
+        <a
+          class="btn btn-telegram btn-cta"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
+</GuideLayout>

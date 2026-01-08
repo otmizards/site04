@@ -1,0 +1,143 @@
+---
+import { SITE } from "../config/site.js";
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title =
+  "Como ler condições no casino online: versão simples | 360Wins Portugal";
+const description =
+  "Guia simples para entender condições no casino online: o que procurar primeiro, o que normalmente importa e como evitar surpresas.";
+---
+
+<GuideLayout title={title} description={description} canonicalPath="/como-ler-condicoes">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Sem complicações</p>
+      <h1>Como ler condições no casino online</h1>
+      <p class="lead">
+        “Condições” são as regras do casino e das promoções.
+        Não precisas de ler tudo palavra por palavra, mas há pontos que deves
+        confirmar para evitar surpresas.
+        Este guia mostra <strong>o que importa</strong> de forma simples.
+      </p>
+
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 5–7 min</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#o-que-sao">O que são condições</a></li>
+        <li><a href="#onde-ver">Onde ver as regras importantes</a></li>
+        <li><a href="#quatro-pontos">4 pontos para confirmar sempre</a></li>
+        <li><a href="#exemplos">Exemplos simples do que pode acontecer</a></li>
+        <li><a href="#erros">Erros comuns</a></li>
+        <li><a href="#proximos-passos">Próximos passos</a></li>
+      </ol>
+    </nav>
+
+    <section id="o-que-sao">
+      <h2>O que são condições</h2>
+      <p>
+        Condições são as regras que explicam como o casino funciona e, quando existem promoções,
+        quais são os limites e requisitos.
+      </p>
+      <p>
+        Se uma regra existe, ela aplica-se mesmo que não a tenhas visto.
+        Por isso, o ideal é confirmar os pontos que mais costumam causar problemas.
+      </p>
+    </section>
+
+    <section id="onde-ver">
+      <h2>Onde ver as regras importantes</h2>
+      <p>
+        Normalmente encontras regras em:
+      </p>
+      <ul>
+        <li>página de “termos e condições”</li>
+        <li>página específica de uma promoção</li>
+        <li>secção de ajuda (FAQ) do casino</li>
+      </ul>
+      <p>
+        Para poupar tempo, foca-te nas regras ligadas a limites e prazos.
+      </p>
+    </section>
+
+    <section id="quatro-pontos">
+      <h2>4 pontos para confirmar sempre</h2>
+      <ul>
+        <li><strong>prazo:</strong> até quando a oferta ou condição é válida</li>
+        <li><strong>limite de aposta:</strong> valor máximo por jogada (quando existe)</li>
+        <li><strong>jogos elegíveis:</strong> em que jogos a regra/oferta se aplica</li>
+        <li><strong>limite de ganhos:</strong> se existe um “teto” de ganhos convertíveis</li>
+      </ul>
+
+      <div class="callout">
+        <h4>Dica prática</h4>
+        <p>
+          Se não estiver claro “prazo” e “limites”, assume que há regras e procura essa parte antes de continuar.
+        </p>
+      </div>
+    </section>
+
+    <section id="exemplos">
+      <h2>Exemplos simples do que pode acontecer</h2>
+      <p>
+        Alguns exemplos comuns, explicados sem termos técnicos:
+      </p>
+      <ul>
+        <li>uma oferta expira em 24–72h e perde-se se não for usada</li>
+        <li>existem jogos onde a promoção não conta</li>
+        <li>há limites de aposta que não devem ser ultrapassados</li>
+        <li>pode existir um limite máximo de ganhos “aproveitáveis”</li>
+      </ul>
+    </section>
+
+    <section id="erros">
+      <h2>Erros comuns</h2>
+      <ul>
+        <li>ler só o destaque e ignorar o resto</li>
+        <li>assumir que “grátis” significa “sem regras”</li>
+        <li>não confirmar prazos</li>
+        <li>não verificar limites</li>
+      </ul>
+      <p>
+        A maioria das frustrações vem destes pontos simples.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos</h2>
+      <ul>
+        <li><a href="/gestao-de-limites">Gestão simples de limites</a></li>
+        <li><a href="/riscos-e-variancia">Porque os resultados variam</a></li>
+        <li><a href="/jogo-consciente">Jogo consciente para iniciantes</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram publicamos guias simples e atualizações para quem está a começar.
+        </p>
+        <a
+          class="btn btn-telegram btn-cta"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
+</GuideLayout>

@@ -1,0 +1,142 @@
+---
+import { SITE } from "../config/site.js";
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title =
+  "Guia para iniciantes no casino online: o básico explicado | 360Wins Portugal";
+const description =
+  "Guia simples para quem está a começar no casino online: o que é, como funciona, tipos de jogos e o que esperar — sem termos técnicos.";
+---
+
+<GuideLayout title={title} description={description} canonicalPath="/guia-iniciante">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Começar do zero</p>
+      <h1>Guia para iniciantes no casino online</h1>
+      <p class="lead">
+        Se nunca jogaste num casino online, este guia é para ti.
+        Aqui explicamos <strong>o básico</strong>: o que é um casino online,
+        como funcionam os jogos mais comuns e o que é normal acontecer
+        quando se começa — sem termos complicados.
+      </p>
+
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 5–7 min</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#o-que-e">O que é um casino online</a></li>
+        <li><a href="#como-funciona">Como funciona na prática</a></li>
+        <li><a href="#tipos-jogos">Tipos de jogos mais comuns</a></li>
+        <li><a href="#o-que-esperar">O que esperar ao jogar</a></li>
+        <li><a href="#erros-iniciais">Erros comuns no início</a></li>
+        <li><a href="#proximos-passos">Próximos passos</a></li>
+      </ol>
+    </nav>
+
+    <section id="o-que-e">
+      <h2>O que é um casino online</h2>
+      <p>
+        Um casino online é uma plataforma na internet onde existem jogos
+        semelhantes aos de um casino físico, como máquinas de jogo e jogos de mesa.
+        Tudo acontece no ecrã, através de um computador ou telemóvel.
+      </p>
+      <p>
+        Não é necessário conhecer regras complexas para começar,
+        mas entender o básico ajuda a evitar confusões.
+      </p>
+    </section>
+
+    <section id="como-funciona">
+      <h2>Como funciona na prática</h2>
+      <p>
+        Em termos simples, escolhes um jogo, fazes uma aposta
+        e o jogo mostra um resultado. Esse resultado pode variar
+        a cada tentativa.
+      </p>
+      <ul>
+        <li>cada jogada é independente</li>
+        <li>não existe memória do jogo anterior</li>
+        <li>ganhar ou perder faz parte do funcionamento normal</li>
+      </ul>
+    </section>
+
+    <section id="tipos-jogos">
+      <h2>Tipos de jogos mais comuns</h2>
+      <p>
+        Existem vários tipos de jogos, mas os mais comuns são:
+      </p>
+      <ul>
+        <li><strong>slots:</strong> jogos automáticos e rápidos</li>
+        <li><strong>jogos de mesa:</strong> como roleta ou blackjack</li>
+        <li><strong>casino ao vivo:</strong> jogos com pessoas reais em vídeo</li>
+      </ul>
+      <p>
+        Cada tipo tem um ritmo diferente, o que muda a experiência.
+      </p>
+    </section>
+
+    <section id="o-que-esperar">
+      <h2>O que esperar ao jogar</h2>
+      <p>
+        Ao jogar, é normal haver resultados diferentes ao longo do tempo.
+        Às vezes ganhas, outras vezes perdes.
+      </p>
+      <p>
+        Sessões curtas podem dar uma ideia errada do funcionamento real.
+        Por isso, é importante ter expectativas simples e realistas.
+      </p>
+    </section>
+
+    <section id="erros-iniciais">
+      <h2>Erros comuns no início</h2>
+      <ul>
+        <li>achar que todos os jogos funcionam da mesma forma</li>
+        <li>jogar sem definir limites</li>
+        <li>tentar “recuperar” perdas rapidamente</li>
+        <li>não fazer pausas</li>
+      </ul>
+      <p>
+        Estes erros são comuns e evitáveis com informação básica.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos</h2>
+      <ul>
+        <li><a href="/como-ler-condicoes">Como ler condições sem complicações</a></li>
+        <li><a href="/gestao-de-limites">Gestão simples de limites</a></li>
+        <li><a href="/riscos-e-variancia">Porque os resultados variam</a></li>
+        <li><a href="/jogo-consciente">Jogo consciente para iniciantes</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram partilhamos guias simples e atualizações
+          pensadas para quem está a começar.
+        </p>
+        <a
+          class="btn btn-telegram btn-cta"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+        >
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.6 4.6 2.9 11.8c-1.3.5-1.3 1.2-.2 1.6l4.8 1.5 1.8 5.5c.2.6.1.8.8.8.6 0 1-.3 1.3-.6l2.3-2.3 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.3-.5-1.9-1.7-1.4Z"
+                fill="white"
+              />
+            </svg>
+          </span>
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
+</GuideLayout>
